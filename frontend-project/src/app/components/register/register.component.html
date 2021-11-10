@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login" style="margin-left: -50%;">
+Login Form</div>
+<div class="title signup">
+Signup Form</div>
+</div>
+</div>
+<div class="form-inner">
+
+<form [formGroup]="userForm" (submit)="creatUser()" class="signup">
+        <div class="field">
+          <input formControlName="username" type="text" placeholder="Email Address" required="">
+        </div>
+        <div class="field">
+          <input type="password" formControlName="password" placeholder="Password" required="">
+        </div>
+        <div class="field">
+          <input  type="password" placeholder="Confirm password" required="">
+        </div>
+        <div class="field btn">
+          <div class="btn-layer">
+        </div>
+<input type="submit" value="Signup">
+        </div>
+</form>
+</div>
